@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Kanit", sans-serif;
+    color: #ECEDF0;
+    background-color: #404A65;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.text--h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+.text--body {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.text--btn {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ECEDF0;
+}
+.bg--button {
+    background-color: #1F6FB0;
+}
+
+.flip__wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    gap: 50px;
+}
+
+.flip__title {
+    text-shadow:
+        -5px -5px 0 #35383f,
+        5px -5px 0 #35383f,
+        -5px  5px 0 #35383f,
+        5px  5px 0 #35383f;
+}
+
+.flip__text,
+.flip__name {
+    text-align: center;
+}
+
+.flip__image {
+    margin-bottom: 20px;
+    width: 160px;
+    height: 160px;
+}
+
+.flip__button {
+    padding: 8px 40px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 0px 0px #23649b;
+    cursor: pointer;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.spin {
+    animation: spin 0.3s linear infinite;
+}
